@@ -40,9 +40,6 @@
     path: "{{base_dir}}/cqube/admin_dashboard/server_side/.env"
     block: |
       PORT = 3001
-      ACCESS_KEY_ID = "{{ s3_access_key }}"
-      SECRET_ACCESS_KEY  = "{{ s3_secret_key }}"
-      OUTPUT_BUCKET = "{{ s3_output_bucket }}"
       BASE_DIR = "{{ base_dir }}"
       BASEURL = "http://{{ local_ipv4_address}}:5000"
 
@@ -52,11 +49,6 @@
       KEYCLOAK_USER= "{{ keycloak_adm_user }}"
       PASSWORD= "{{ keycloak_adm_passwd }}"
       GRANT_TYPE= "password"
-
-      EMISSION_BUCKET_NAME= {{ s3_emission_bucket }}
-      INPUT_BUCKET_NAME= {{ s3_input_bucket }}
-      OUTPUT_BUCKET_NAME= {{ s3_output_bucket }} 
-      AWS_REGION= "{{ aws_default_region }}"
 
       NIFI_PROCESSORS= "crc_transformer,semester_transformer,student_attendance_transformer,diksha_transformer,infra_transformer,static_data_transformer,udise_transformer,pat_transformer,composite_transformer,healthcard_transformer,teacher_attendance_transformer"
       NIFI_URL= "http://localhost:8096/nifi-api"

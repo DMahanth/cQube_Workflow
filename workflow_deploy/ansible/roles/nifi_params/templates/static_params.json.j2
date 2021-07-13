@@ -8,11 +8,6 @@
                 "name":"static_data_parameters",
 
         "parameters":[
-            {
-                "parameter":{"name":"s3_output_bucket",
-                        "value":"{{ s3_output_bucket }}"
-                            }
-            },
 	    {
                 "parameter":{"name":"db_user",
                         "value":"{{ db_user }}"
@@ -36,18 +31,6 @@
             {
                 "parameter":{"name":"db_connection_url",
                         "value":"{{ db_connection_url }}"
-                            }
-            },
-	    {
-                "parameter":{"name":"s3_access_key",
-                "sensitive": true,
-                        "value":"{{ s3_access_key }}"
-                            }
-            },
-            {
-                "parameter":{"name":"s3_secret_key",
-                "sensitive": true,
-                        "value":"{{ s3_secret_key }}"
                             }
             },
             {

@@ -38765,9 +38765,9 @@ WHERE ff_uuid = '${source.uuid}';</value>
             </contents>
             <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
             <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
-            <name>sat_transformer_on_permise</name>
+            <name>sat_transformer</name>
             <variables/>
         </processGroups>
     </snippet>
-    <timestamp>07/13/2021 15:28:49 IST</timestamp>
+    <timestamp>07/13/2021 20:09:31 IST</timestamp>
 </template>
